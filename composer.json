@@ -24,7 +24,6 @@
         }
     ],
     "extra":{
-        "magento-root-dir": "../htdocs/",
-        "modman-root-dir": ".modman"
+        "magento-root-dir": "../htdocs/"
     }
 }
