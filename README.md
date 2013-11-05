@@ -17,7 +17,7 @@ Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton
 
 ## Todo ##
 - [ ] Remove modman stuff in extension modules and replace with composer. Update Extension base repo and also export/carousel module.
-- [ ] Capistrano - Finish composer tasks.
+- [x] Capistrano - Finish composer tasks.
 - [ ] Capistrano - Create task to run front end scripts
 - [ ] Capistrano - Create tasks for various magento admin tasks. Take a look at [Magentify](https://github.com/alistairstead/Magentify)
 - [ ] Capistrano - Create task for installing Magento (eg CE && EE)
