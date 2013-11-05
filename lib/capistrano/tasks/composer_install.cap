@@ -1,0 +1,28 @@
+namespace :composer do
+    desc "Install composer without dev dependencies"
+    task :install_no_dev do
+        on roles(:all) do |host|
+            within release_path do
+                execute fetch(:composer), fetch(:composer_flags)
+            end
+        end
+    end
+
+    desc "Install composer with dev dependencies"
+    task :install_dev do
+        on roles(:all) do |host|
+            within release_path do
+                execute fetch(:composer), fetch(:composer_dev_flags)
+            end
+        end
+    end
+
+end
+
+namespace :load do
+  task :defaults do
+    set :composer_flags,        'install --no-dev --no-scripts --quiet --optimize-autoloader --prefer-dist'
+    set :composer_dev_flags,    'install'
+    set :composer,              './composer.phar'
+  end
+end
