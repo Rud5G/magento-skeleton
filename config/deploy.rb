@@ -1,10 +1,8 @@
 set :application, 'mage_skel_app'
-set :repo_url, 'git@bitbucket.org:jhhello/jh_magento_boilerplate.git'
+set :scm, :git
+set :repo_url, 'git@bitbucket.org:AydinHassan/jh_magento_skeleton.git'
 set :branch, 'master'
-
-
-# set :deploy_to, '/var/www/my_app'
-# set :scm, :git
+set :keep_releases, 3
 
 # set :format, :pretty
 # set :log_level, :debug
@@ -14,7 +12,6 @@ set :branch, 'master'
 # set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-# set :keep_releases, 5
 
 namespace :deploy do
 
@@ -35,6 +32,7 @@ namespace :deploy do
     end
   end
 
+  before 'deploy:updated', 'composer:install_no_dev'
   after :finishing, 'deploy:cleanup'
 
 end
