@@ -27,7 +27,7 @@ Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton
 - [ ] Docs - How to install a Magento Extension (Include remarks about having to gitignore module files).
 - [ ] Docs - Using Composer
 - [ ] Docs - Setting up a new project
-- [ ] Docs - Installing project locally
+- [x] Docs - Installing project locally
 - [ ] Docs - Configuring a project for capistrano deploy
 - [ ] Docs - Using n98-magerun
 - [ ] Docs - Provide justification for goals of project
