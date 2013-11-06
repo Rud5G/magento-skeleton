@@ -25,7 +25,7 @@ Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton
 - [ ] Capistrano - Create tasks for setting up users/vhosts/directories
 - [x] Docs - Detail process for setting memory limit for MAMP PHP CLI access
 - [ ] Docs - How to install a Magento Extension (Include remarks about having to gitignore module files).
-- [ ] Docs - Using Composer
+- [x] Docs - Using Composer
 - [ ] Docs - Setting up a new project
 - [x] Docs - Installing project locally
 - [ ] Docs - Configuring a project for capistrano deploy

@@ -10,6 +10,9 @@
         "ivanchepurnyi/ecomdev_phpunit": "0.3.1",
         "magento-hackathon/magento-composer-installer": "*"
     },
+    "require": {
+
+    },
     "authors": [
         {
             "name": "Aydin Hassan",
