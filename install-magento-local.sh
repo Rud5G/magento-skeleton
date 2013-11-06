@@ -12,3 +12,7 @@ php n98-magerun.phar install --installationFolder=htdocs --useDefaultConfigParam
 
 #Install composer dependencies - including dev
 ./composer.phar update
+
+#bit of a hack to delete git history - we don't want the clone, we only want the files
+cd htdocs
+rm -rf .git
