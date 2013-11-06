@@ -9,3 +9,6 @@ fi
 cp .n98-magerun.yaml ~/.n98-magerun.yaml
 
 php n98-magerun.phar install --installationFolder=htdocs --useDefaultConfigParams=yes --replaceHtaccessFile=yes
+
+#Install composer dependencies - including dev
+./composer.phar update
