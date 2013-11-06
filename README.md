@@ -9,6 +9,7 @@ This module is designed to alleviate the task of setting up a new project. It al
 - [ ] Simplify Project setup procedure.
 - [ ] Utilise n98-magerun tool.
 - [ ] Deploy with Capistrano.
+- [ ] Provide a framework for Unit Testing
 
 
 ## Documentation ##
@@ -30,6 +31,7 @@ Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton
 - [ ] Docs - Configuring a project for capistrano deploy
 - [ ] Docs - Using n98-magerun
 - [ ] Docs - Provide justification for goals of project
-- [ ] Local Install Script - Option for installing sample data
+- [ ] Docs - Unit Testing
+- [x] Local Install Script - Option for installing sample data
 
 ## Justifications ##

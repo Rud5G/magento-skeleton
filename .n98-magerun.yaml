@@ -7,6 +7,9 @@ commands:
           url: git@bitbucket.org:jhhello/magento_ce_1.8.0.0.git
           type: git
           reference: master
+        extra:
+          #standard magento sample data - http://www.magentocommerce.com/downloads/assets/1.6.1.0/magento-sample-data-1.6.1.0.tar.gz
+          sample-data: sample-data-1.6.1.0
 
     defaults:
       currency: GBP
@@ -21,3 +24,11 @@ commands:
       admin_password: password123
       admin_frontname: admin
       admin_email: john.doe@example.com
+
+    #example of how to add demo data packages, if we decide to host our own
+    demo-data-packages:
+      - name: jh-sample-data-ce-1.0
+        version: 1.0
+        dist:
+          url: http://wearejh.com/magento/sampledata/ce/jh-sample-data-cd-1.0.tar.gz
+          type: tar
