@@ -24,7 +24,7 @@ Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton
 - [ ] Capistrano - Create task for installing Magento (eg CE && EE)
 - [ ] Capistrano - Create tasks for setting up users/vhosts/directories
 - [x] Docs - Detail process for setting memory limit for MAMP PHP CLI access
-- [ ] Docs - How to install a Magento Extension (Include remarks about having to gitignore module files).
+- [x] Docs - How to install a Magento Extension (Include remarks about having to gitignore module files).
 - [x] Docs - Using Composer
 - [ ] Docs - Setting up a new project
 - [x] Docs - Installing project locally
@@ -33,5 +33,6 @@ Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton
 - [ ] Docs - Provide justification for goals of project
 - [ ] Docs - Unit Testing
 - [x] Local Install Script - Option for installing sample data
+- [ ] Investigate and implement Composer autoloading into Magento Bootstrap process
 
 ## Justifications ##
