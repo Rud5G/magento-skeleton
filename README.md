@@ -6,8 +6,8 @@ This module is designed to alleviate the task of setting up a new project. It al
 
 1. [ ] Stop putting Magento Source code in project repositories.
 1. [ ] Allow extensions to be installable by Composer.
-1. [ ] Simplify Project setup procedure.
-1. [ ] Utilise n98-magerun tool.
+1. [x] Simplify Project setup procedure.
+1. [x] Utilise n98-magerun tool.
 1. [ ] Deploy with Capistrano.
 1. [ ] Provide a framework for Unit Testing
 
@@ -26,7 +26,7 @@ Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton
 - [x] Docs - Detail process for setting memory limit for MAMP PHP CLI access
 - [x] Docs - How to install a Magento Extension (Include remarks about having to gitignore module files).
 - [x] Docs - Using Composer
-- [ ] Docs - Setting up a new project
+- [x] Docs - Setting up a new project
 - [x] Docs - Installing project locally
 - [ ] Docs - Configuring a project for capistrano deploy
 - [x] Docs - Using n98-magerun
