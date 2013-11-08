@@ -11,6 +11,13 @@ commands:
           #standard magento sample data - http://www.magentocommerce.com/downloads/assets/1.6.1.0/magento-sample-data-1.6.1.0.tar.gz
           sample-data: sample-data-1.6.1.0
 
+      - name: jh-magento-ee-1.13.0.2
+        version: 1.13.0.2
+        source:
+          url: git@bitbucket.org:jhhello/magento_ee_1.13.0.2.git
+          type: git
+          reference: master
+
     defaults:
       currency: GBP
       locale: en_US
