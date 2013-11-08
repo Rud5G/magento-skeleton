@@ -4,7 +4,7 @@ This module is designed to alleviate the task of setting up a new project. It al
 
 ## Goals ##
 
-1. [ ] Stop putting Magento Source code in project repositories.
+1. [x] Stop putting Magento Source code in project repositories.
 1. [ ] Allow extensions to be installable by Composer.
 1. [x] Simplify Project setup procedure.
 1. [x] Utilise n98-magerun tool.
@@ -19,9 +19,9 @@ Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton
 ## Todo ##
 - [ ] Remove modman stuff in extension modules and replace with composer. Update Extension base repo and also export/carousel module.
 - [x] Capistrano - Finish composer tasks.
-- [ ] Capistrano - Create task to run front end scripts
-- [ ] Capistrano - Create tasks for various magento admin tasks. Take a look at [Magentify](https://github.com/alistairstead/Magentify)
-- [ ] Capistrano - Create task for installing Magento (eg CE && EE)
+- [x] Capistrano - Create task to run front end scripts
+- [x] Capistrano - Create tasks for various magento admin tasks. Take a look at [Magentify](https://github.com/alistairstead/Magentify)
+- [x] Capistrano - Create task for installing Magento (eg CE && EE)
 - [ ] Capistrano - Create tasks for setting up users/vhosts/directories
 - [x] Docs - Detail process for setting memory limit for MAMP PHP CLI access
 - [x] Docs - How to install a Magento Extension (Include remarks about having to gitignore module files).
@@ -34,6 +34,7 @@ Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton
 - [ ] Docs - Unit Testing
 - [x] Local Install Script - Option for installing sample data
 - [ ] Investigate and implement Composer autoloading into Magento Bootstrap process
+- [ ] Investigate loading DB credentials for Capistrano via local only file
 
 ## Justifications ##
 Below are sme justifications for the goals of the project to hopefully convince the haterz.
@@ -48,7 +49,4 @@ Below are sme justifications for the goals of the project to hopefully convince 
 
 1. Because our deploys are too manual. We are programmers and what do we love best? Automation! YEAH! With Capistrano we can create tasks to do all the manual stuff we do at deploy, Update code, install dependencies, run scripts, clear cache, setup vhosts, upgrade magento versions and lots more.
 
-1. Shouldn't need to justify this - saves debugging and bug fixing time - produces better, reusable code. Helps devs become better devs whilst creating a more solid product for the client? win. 
-
-
-
+1. Shouldn't need to justify this - saves debugging and bug fixing time - produces better, reusable code. Helps devs become better devs whilst creating a more solid product for the client? win.
