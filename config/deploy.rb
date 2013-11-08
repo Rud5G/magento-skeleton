@@ -1,17 +1,22 @@
-set :application, 'mage_skel_app'
-set :scm, :git
-set :repo_url, 'git@bitbucket.org:AydinHassan/jh_magento_skeleton.git'
-set :branch, 'master'
+set :application,   'mage_skel_app'
 set :keep_releases, 3
 
-# set :format, :pretty
+#git details
+set :scm, :git
+set :repo_url,      'git@bitbucket.org:AydinHassan/jh_magento_skeleton.git'
+set :branch,        'master'
+set :deploy_via,    :remote_cache
+
 # set :log_level, :debug
 # set :pty, true
 
-# set :linked_files, %w{config/database.yml}
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
-# set :default_env, { path: "/opt/ruby/bin:$PATH" }
+DB_CONFIG = YAML.load_file('config/deploy/db/staging.yaml');
+set :dbHost, DB_CONFIG['databse_host']
+set :dbUser, DB_CONFIG['databse_user']
+set :dbPass, DB_CONFIG['databse_password']
+set :dbName, DB_CONFIG['databse_name']
+
 
 namespace :deploy do
 
@@ -32,7 +37,8 @@ namespace :deploy do
     end
   end
 
-  before 'deploy:updated', 'composer:install_no_dev'
+  before 'deploy:updated', 'magerun:install_magento'
+  after 'magerun:install_magento', 'composer:install_no_dev'
   after :finishing, 'deploy:cleanup'
 
 end
