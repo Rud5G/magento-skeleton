@@ -11,7 +11,7 @@ commands:
       - name: jh-magento-ee-1.13.0.2
         version: 1.13.0.2
         source:
-          url: git@bitbucket.org:jh_adampaterson/magento_ee_1.13.0.2.git
+          url: git@bitbucket.org:jh_hello/magento_ee_1.13.0.2.git
           type: git
           reference: master
 
