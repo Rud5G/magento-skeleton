@@ -8,6 +8,13 @@ commands:
           type: git
           reference: master
 
+      - name: jh-magento-ee-1.13.0.2
+        version: 1.13.0.2
+        source:
+          url: git@bitbucket.org:jh_adampaterson/magento_ee_1.13.0.2.git
+          type: git
+          reference: master
+
     defaults:
       currency: GBP
       locale: en_US
