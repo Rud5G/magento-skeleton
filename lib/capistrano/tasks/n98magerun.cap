@@ -1,0 +1,38 @@
+namespace :magerun do
+    desc "Install Magento using n98-magerun"
+    task :install_magento do
+        on roles(:app) do |host|
+            within release_path do
+                execute "cp", "#{fetch(:magerunconfig)} ~/#{fetch(:magerunconfig)}"
+                execute fetch(:magerun), "#{fetch(:magerun_install_flags)} --magentoVersionByName=#{fetch(:magentoversion)} --installationFolder=#{fetch(:installationPath)} --dbHost=#{fetch(:dbHost)} --dbUser=#{fetch(:dbUser)} --dbPass=#{fetch(:dbPass)} --dbName=#{fetch(:dbName)} --baseUrl=#{fetch(:baseUrl)} --replaceHtaccessFile=#{fetch(:replaceHtaccess)} --useDefaultConfigParams=yes --installSampleData=no"
+            end
+        end
+    end
+
+    desc "Clear Magento cache"
+    task :clear_cache do
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun),
+            end
+        end
+    end
+
+
+end
+
+namespace :load do
+  task :defaults do
+    set :magerunconfig,         '.n98-magerun.yaml'
+    set :magerun_install_flags, 'install '
+    set :magerun,               './n98-magerun.phar'
+    set :magentoversion,        'jh-magento-ce-1.8.0.0'
+    set :installationPath,      'htdocs'
+    set :dbHost,                'localhost'
+    set :dbUser,                'root'
+    set :dbPass,                'prafr37anEq3qa'
+    set :dbName,                'mageskeltest'
+    set :baseUrl,               'mageskeltest.dev.wearejh.com'
+    set :replaceHtaccessFile,   'yes'
+  end
+end

@@ -1,0 +1,27 @@
+namespace :env do
+    desc "Create directory structure for a new site"
+    task :create_site_structure do
+        on roles(:app) do |host|
+
+
+        end
+    end
+
+    desc "Create user for new site"
+    task :create_site_user do
+        on roles(:app) do |host|
+            info "Creating user account: '#{fetch(:application)}'"
+            set :password, capture("openssl rand -base64 12")
+            execute "sudo useradd",  "-m -d #{fetch(:website_home)}#{fetch(:application)} -N -g www-data -G sftponly -p #{fetch(:password)} #{fetch(:application)}"
+        end
+    end
+
+
+
+end
+
+namespace :load do
+  task :defaults do
+    set :website_home,  '/websites/dev.wearejh.com/'
+  end
+end
