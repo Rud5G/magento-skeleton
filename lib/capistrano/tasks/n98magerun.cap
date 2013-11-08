@@ -13,14 +13,131 @@ namespace :magerun do
     task :clear_cache do
         on roles(:app) do |host|
             within release_path do
-                execute fetch(:magerun),
+                execute fetch(:magerun), "cache:clean"
             end
         end
     end
 
+    desc "Disable Magento caches"
+    task :disable_caches do
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun), "cache:disable"
+            end
+        end
+    end
 
+    desc "Enable Magento caches"
+    task :enable_caches do
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun), "cache:enable"
+            end
+        end
+    end
+
+    desc "Flush Magento caches"
+    task :flush_cache do
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun), "cache:flush"
+            end
+        end
+    end
+
+    desc "Disable Magento caches"
+    task :list_cache do
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun), "cache:list"
+            end
+        end
+    end
+
+    desc "Toggle maintenance mode"
+    task :toggle_maintenance_mode do
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun), "sys:maintenance"
+            end
+        end
+    end
+
+    desc "Show Magento System Info"
+    task :sys_info do
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun), "sys:info"
+            end
+        end
+    end
+
+    desc "List Magento Indexes"
+    task :list_indexes do
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun), "index:list"
+            end
+        end
+    end
+
+    desc "Reindex all Magento Indexes"
+    task :reindex_all do
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun), "index:reindex:all"
+            end
+        end
+    end
+
+    desc "Dump the database using credentials found in local.xml, will only work if mysqlclient is available"
+    task :db_dump do
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun), "db:dump --force"
+            end
+        end
+    end
+
+    desc "List the Admin users on this site"
+    task :list_admin_users do
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun), "admin:user:list"
+            end
+        end
+    end
+
+    desc "Change Admin user password"
+    task :change_admin_user_pass, :user, :pass do |task, args|
+
+        if !args.pass || !args.user
+            fail 'Please specify a user and password: cap staging "magerun:change_admin_user_pass[user,pass]"'
+        end
+
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun), "admin:user:change-password", args[:user], args[:pass]
+            end
+        end
+    end
+
+    desc "create Admin User"
+    task :create_admin_user, :user, :email, :pass, :fname, :lname do |task, args|
+
+        unless args.count == 5
+            fail 'Please specify the correct arguments: cap staging "magerun:crate_admin_user[user,email,pass,fname,lname]"'
+        end
+
+        on roles(:app) do |host|
+            within release_path do
+                execute fetch(:magerun), "admin:user:change-password", args[:user], args[:email], args[:pass], args[:fname], args[lname]
+            end
+        end
+    end
 end
 
+#These parameters should be specified in the environment specific configuration files
 namespace :load do
   task :defaults do
     set :magerunconfig,         '.n98-magerun.yaml'
@@ -29,10 +146,10 @@ namespace :load do
     set :magentoversion,        'jh-magento-ce-1.8.0.0'
     set :installationPath,      'htdocs'
     set :dbHost,                'localhost'
-    set :dbUser,                'root'
-    set :dbPass,                'prafr37anEq3qa'
-    set :dbName,                'mageskeltest'
-    set :baseUrl,               'mageskeltest.dev.wearejh.com'
+    set :dbUser,                'db-user'
+    set :dbPass,                'db-pass'
+    set :dbName,                'db-name'
+    set :baseUrl,               'base-url'
     set :replaceHtaccessFile,   'yes'
   end
 end
