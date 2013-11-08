@@ -5,7 +5,8 @@ composer.lock
 .DS_Store
 
 #Magento files
-htdocs/app/code/community/
+htdocs/app/code/community/Cm
+htdocs/app/code/community/Phoenix
 htdocs/app/code/core/
 htdocs/app/design/adminhtml/default/default/
 htdocs/app/design/frontend/base/
