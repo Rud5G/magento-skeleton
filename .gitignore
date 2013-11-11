@@ -171,3 +171,5 @@ htdocs/var/
 
 #Extensions
 
+#jhhello/magento_composer_autoloader
+htdocs/app/code/local/Varien

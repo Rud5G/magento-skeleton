@@ -11,7 +11,7 @@
         "magento-hackathon/magento-composer-installer": "*"
     },
     "require": {
-
+        "jhhello/magento_composer_autoloader": "master"
     },
     "authors": [
         {
@@ -24,6 +24,10 @@
         {
             "type": "composer",
             "url": "http://packages.firegento.com"
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:jhhello/jh_magento_composer_autoloader.git"
         }
     ],
     "extra":{
