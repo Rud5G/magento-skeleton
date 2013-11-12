@@ -5,7 +5,7 @@ This module is designed to alleviate the task of setting up a new project. It al
 ## Goals ##
 
 1. [x] Stop putting Magento Source code in project repositories.
-1. [ ] Allow extensions to be installable by Composer.
+1. [x] Allow extensions to be installable by Composer.
 1. [x] Simplify Project setup procedure.
 1. [x] Utilise n98-magerun tool.
 1. [ ] Deploy with Capistrano.
@@ -17,7 +17,7 @@ This module is designed to alleviate the task of setting up a new project. It al
 Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton/wiki/Home)
 
 ## Todo ##
-- [ ] Remove modman stuff in extension modules and replace with composer. Update Extension base repo and also export/carousel module.
+- [x] Remove modman stuff in extension modules and replace with composer. Update Extension base repo and also export/carousel module.
 - [x] Capistrano - Finish composer tasks.
 - [x] Capistrano - Create task to run front end scripts
 - [x] Capistrano - Create tasks for various magento admin tasks. Take a look at [Magentify](https://github.com/alistairstead/Magentify)
@@ -33,8 +33,9 @@ Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton
 - [x] Docs - Provide justification for goals of project
 - [ ] Docs - Unit Testing
 - [x] Local Install Script - Option for installing sample data
-- [ ] Investigate and implement Composer autoloading into Magento Bootstrap process
+- [x] Investigate and implement Composer autoloading into Magento Bootstrap process
 - [ ] Investigate loading DB credentials for Capistrano via local only file
+- [ ] Update Composer docs for autoloading and Magento Composer Installer
 
 ## Justifications ##
 Below are sme justifications for the goals of the project to hopefully convince the haterz.
