@@ -34,8 +34,8 @@ Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton
 - [ ] Docs - Unit Testing
 - [x] Local Install Script - Option for installing sample data
 - [x] Investigate and implement Composer autoloading into Magento Bootstrap process
-- [ ] Investigate loading DB credentials for Capistrano via local only file
-- [ ] Update Composer docs for autoloading and Magento Composer Installer
+- [x] Investigate loading DB credentials for Capistrano via local only file
+- [x] Update Composer docs for autoloading and Magento Composer Installer
 
 ## Justifications ##
 Below are sme justifications for the goals of the project to hopefully convince the haterz.
