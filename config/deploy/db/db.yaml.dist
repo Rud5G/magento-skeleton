@@ -1,0 +1,17 @@
+development:
+    database_user:      'db_user'
+    database_password:  'db_pass'
+    database_host:      'some_host'
+    database_db:        'db_name'
+
+staging:
+    database_user:      'db_user'
+    database_password:  'db_pass'
+    database_host:      'some_host'
+    database_db:        'db_name'
+
+production:
+    database_user:      'db_user'
+    database_password:  'db_pass'
+    database_host:      'some_host'
+    database_db:        'db_name'

@@ -1,0 +1,31 @@
+namespace :load do
+    task :defaults do
+        def load_database_config()
+            stage = fetch(:stage)
+
+            begin
+                db_config =  YAML.load_file('config/deploy/db/db.yaml')["#{stage}"];
+            rescue
+                fail "Error: Database Config file does not exist or config for stage: '#{stage}' is not present"
+            end
+
+            if !db_config["database_user"]
+                fail "Error: 'database_user' not set in database config."
+            end
+
+            if !db_config["database_password"]
+                fail "Error: 'database_password' not set in database config."
+            end
+
+            if !db_config["database_host"]
+                fail "Error: 'database_host' not set in database config."
+            end
+
+            if !db_config["database_db"]
+                fail "Error: 'database_user' not set in database config."
+            end
+
+            return db_config;
+        end
+    end
+end

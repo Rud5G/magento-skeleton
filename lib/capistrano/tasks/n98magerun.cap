@@ -4,7 +4,8 @@ namespace :magerun do
         on roles(:app) do |host|
             within release_path do
                 execute "cp", "#{fetch(:magerunconfig)} ~/#{fetch(:magerunconfig)}"
-                execute fetch(:magerun), "#{fetch(:magerun_install_flags)} --magentoVersionByName=#{fetch(:magentoversion)} --installationFolder=#{fetch(:installationPath)} --dbHost=#{fetch(:dbHost)} --dbUser=#{fetch(:dbUser)} --dbPass=#{fetch(:dbPass)} --dbName=#{fetch(:dbName)} --baseUrl=#{fetch(:baseUrl)} --replaceHtaccessFile=#{fetch(:replaceHtaccess)} --useDefaultConfigParams=yes --installSampleData=no"
+                db_config = load_database_config
+                execute fetch(:magerun), "#{fetch(:magerun_install_flags)} --magentoVersionByName=#{fetch(:magentoversion)} --installationFolder=#{fetch(:installationPath)} --dbHost=#{db_config['database_host']} --dbUser=#{db_config['database_user']} --dbPass=#{db_config['database_password']} --dbName=#{db_config['database_db']} --baseUrl=#{fetch(:baseUrl)} --replaceHtaccessFile=#{fetch(:replaceHtaccess)} --useDefaultConfigParams=yes --installSampleData=no"
             end
         end
     end
