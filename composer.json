@@ -11,6 +11,7 @@
         "magento-hackathon/magento-composer-installer": "*"
     },
     "require": {
+        "jhhello/magento-ce-1.8.0.0": "master",
         "jhhello/magento_composer_autoloader": "v0.1"
     },
     "authors": [
@@ -28,6 +29,10 @@
         {
             "type": "vcs",
             "url": "git@bitbucket.org:jhhello/jh_magento_composer_autoloader.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:jhhello/magento_ce_1.8.0.0"
         }
     ],
     "extra":{
