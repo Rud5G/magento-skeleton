@@ -8,11 +8,13 @@
         "phpunit/phpunit": "3.7.x-dev",
         "phpunit/phpunit-story": "1.0.2",
         "ivanchepurnyi/ecomdev_phpunit": "0.3.1",
-        "magento-hackathon/magento-composer-installer": "*"
+        "magento-hackathon/magento-composer-installer": "*",
+        "magento-hackathon/composer-command-integrator": "*"
     },
     "require": {
         "jhhello/magento-ce-1.8.0.0": "master",
-        "jhhello/magento_composer_autoloader": "v0.1"
+        "jhhello/magento_composer_autoloader": "v0.1",
+        "n98/magerun": "1.83.0"
     },
     "authors": [
         {
