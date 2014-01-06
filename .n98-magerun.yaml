@@ -18,6 +18,13 @@ commands:
           type: git
           reference: master
 
+      - name: jh-magento-ce-1.8.1.0
+        version: 1.8.1.0
+        source:
+          url: git@bitbucket.org:AydinHassan/test-magento_ce_1.8.1.0.git
+          type: git
+          reference: master
+
     defaults:
       currency: GBP
       locale: en_US
