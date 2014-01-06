@@ -1,4 +1,4 @@
-set :stage, :staging
+set :stage, :development
 set :deploy_to, '/webistes/dev.wearejh.com/mageskel/dev/'
 
 # Simple Role Syntax
