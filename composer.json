@@ -12,9 +12,10 @@
         "magento-hackathon/composer-command-integrator": "*"
     },
     "require": {
-        "jhhello/magento-ce-1.8.0.0": "master",
         "jhhello/magento_composer_autoloader": "v0.1",
-        "n98/magerun": "1.83.0"
+        "quafzi/magento-core-installer": "dev-master",
+        "n98/magerun": "1.*",
+        "jhhello/magento_ce_1.8.10": "dev-master"
     },
     "authors": [
         {
@@ -35,9 +36,20 @@
         {
             "type": "vcs",
             "url": "git@bitbucket.org:jhhello/magento_ce_1.8.0.0"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/AydinHassan/magento-core-installer.git"
+
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:AydinHassan/test-magento_ce_1.8.1.0.git"
+
         }
     ],
     "extra":{
         "magento-root-dir": "../htdocs/"
     }
+
 }

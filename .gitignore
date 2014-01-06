@@ -172,3 +172,6 @@ htdocs/var/
 
 #jhhello/magento_composer_autoloader
 htdocs/app/code/local/Varien
+
+#Dev Stuff
+clean.sh

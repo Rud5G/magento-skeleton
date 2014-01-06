@@ -1,0 +1,20 @@
+namespace :magento do
+    desc "Install composer without dev dependencies"
+    task :copy do
+        on roles(:all) do |host|
+            within release_path do
+                magento_version = fetch(:magento_version)
+                path = "vendor/jhhello/#{magento_version}"
+                execute "cp -R #{path} htdocs"
+            end
+        end
+    end
+end
+
+namespace :load do
+  task :defaults do
+    set :composer_flags,        'install --no-dev --no-scripts --optimize-autoloader --prefer-dist'
+    set :composer_dev_flags,    'install'
+    set :composer,              './composer.phar'
+  end
+end
