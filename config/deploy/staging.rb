@@ -1,4 +1,5 @@
 set :stage, :staging
+set :deploy_to, '~/sites/mageskel'
 
 # Simple Role Syntax
 # ==================
