@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "76833335152d17632e1afe277a9edbbb232d3a1f"
+                "reference": "fd297bce9222eea72ab7717b5621414aceefab6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/76833335152d17632e1afe277a9edbbb232d3a1f",
-                "reference": "76833335152d17632e1afe277a9edbbb232d3a1f",
+                "url": "https://api.github.com/repos/composer/composer/zipball/fd297bce9222eea72ab7717b5621414aceefab6a",
+                "reference": "fd297bce9222eea72ab7717b5621414aceefab6a",
                 "shasum": ""
             },
             "require": {
@@ -25,7 +25,7 @@
                 "seld/jsonlint": "1.*",
                 "symfony/console": "~2.3",
                 "symfony/finder": "~2.2",
-                "symfony/process": "~2.1@dev"
+                "symfony/process": "~2.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "~3.7.10"
@@ -72,7 +72,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2014-01-05 10:21:57"
+            "time": "2014-01-06 18:37:30"
         },
         {
             "name": "fzaninotto/faker",
@@ -48575,12 +48575,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/netz98/n98-magerun.git",
-                "reference": "eef44f332acba1b2b25b91a9de10b99fe3d46a08"
+                "reference": "eab32f118610dd24e4e153cb9749f19d55f8b589"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netz98/n98-magerun/zipball/eef44f332acba1b2b25b91a9de10b99fe3d46a08",
-                "reference": "eef44f332acba1b2b25b91a9de10b99fe3d46a08",
+                "url": "https://api.github.com/repos/netz98/n98-magerun/zipball/eab32f118610dd24e4e153cb9749f19d55f8b589",
+                "reference": "eab32f118610dd24e4e153cb9749f19d55f8b589",
                 "shasum": ""
             },
             "require": {
@@ -48632,7 +48632,7 @@
                 "magento",
                 "magerun"
             ],
-            "time": "2014-01-06 13:08:28"
+            "time": "2014-01-06 15:18:06"
         },
         {
             "name": "quafzi/magento-core-installer",
