@@ -7,11 +7,11 @@
         "phpunit/dbunit": "1.2.3",
         "phpunit/phpunit": "3.7.x-dev",
         "phpunit/phpunit-story": "1.0.2",
-        "ivanchepurnyi/ecomdev_phpunit": "0.3.1",
-        "magento-hackathon/magento-composer-installer": "*",
-        "magento-hackathon/composer-command-integrator": "*"
+        "ivanchepurnyi/ecomdev_phpunit": "0.3.1"
     },
     "require": {
+        "magento-hackathon/magento-composer-installer": "*",
+        "magento-hackathon/composer-command-integrator": "*",
         "jhhello/magento_composer_autoloader": "v0.1",
         "quafzi/magento-core-installer": "dev-master",
         "n98/magerun": "dev-develop",

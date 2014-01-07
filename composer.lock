@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e5659dd64d573eaad1bcf0c095472524",
+    "hash": "0d9903d903a9d82a3d7c28f9b07564a7",
     "packages": [
         {
             "name": "composer/composer",
@@ -48460,6 +48460,52 @@
             "time": "2012-01-03 00:33:17"
         },
         {
+            "name": "magento-hackathon/composer-command-integrator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git://github.com/magento-hackathon/composer-command-integrator.git",
+                "reference": "1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/magento-hackathon/composer-command-integrator/zipball/1.0",
+                "reference": "1.0",
+                "shasum": ""
+            },
+            "require": {
+                "composer/composer": "*"
+            },
+            "require-dev": {
+                "composer/composer": "*",
+                "phpunit/phpunit": "*"
+            },
+            "bin": [
+                "bin/composerCommandIntegrator.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "MagentoHackathon\\Composer\\Command": "src/"
+                }
+            },
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Fahlke aka Flyingmana",
+                    "email": "daniel@digitalmanufaktur.com"
+                }
+            ],
+            "description": "module to create binaries and scripts which get executed in context of composer so they are able to access content from the composer.json ",
+            "support": {
+                "source": "https://github.com/magento-hackathon/composer-command-integrator/tree/1.0",
+                "issues": "https://github.com/magento-hackathon/composer-command-integrator/issues"
+            },
+            "time": "2013-07-31 03:10:25"
+        },
+        {
             "name": "magento-hackathon/magento-composer-installer",
             "version": "dev-master",
             "source": {
@@ -48946,12 +48992,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/PropertyAccess.git",
-                "reference": "9935cedf9a7d089346475a4805059923fcf15c52"
+                "reference": "0a1328b9b197753b2e19aaa24f05c21b2760f0b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/PropertyAccess/zipball/9935cedf9a7d089346475a4805059923fcf15c52",
-                "reference": "9935cedf9a7d089346475a4805059923fcf15c52",
+                "url": "https://api.github.com/repos/symfony/PropertyAccess/zipball/0a1328b9b197753b2e19aaa24f05c21b2760f0b7",
+                "reference": "0a1328b9b197753b2e19aaa24f05c21b2760f0b7",
                 "shasum": ""
             },
             "require": {
@@ -48995,7 +49041,7 @@
                 "property path",
                 "reflection"
             ],
-            "time": "2013-12-23 14:13:24"
+            "time": "2014-01-07 13:29:57"
         },
         {
             "name": "symfony/translation",
@@ -49004,12 +49050,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "a4cbc81338618c37ea24b5ca9d70a64090d12c73"
+                "reference": "4c0b284dce13c0bf60afc42f1c255cc91f87c82c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/a4cbc81338618c37ea24b5ca9d70a64090d12c73",
-                "reference": "a4cbc81338618c37ea24b5ca9d70a64090d12c73",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/4c0b284dce13c0bf60afc42f1c255cc91f87c82c",
+                "reference": "4c0b284dce13c0bf60afc42f1c255cc91f87c82c",
                 "shasum": ""
             },
             "require": {
@@ -49050,7 +49096,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-02 14:42:17"
+            "time": "2014-01-07 13:29:57"
         },
         {
             "name": "symfony/validator",
@@ -49249,52 +49295,6 @@
                 "issues": "https://github.com/EcomDev/EcomDev_PHPUnit/issues"
             },
             "time": "2013-01-31 23:23:12"
-        },
-        {
-            "name": "magento-hackathon/composer-command-integrator",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/magento-hackathon/composer-command-integrator.git",
-                "reference": "1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/magento-hackathon/composer-command-integrator/zipball/1.0",
-                "reference": "1.0",
-                "shasum": ""
-            },
-            "require": {
-                "composer/composer": "*"
-            },
-            "require-dev": {
-                "composer/composer": "*",
-                "phpunit/phpunit": "*"
-            },
-            "bin": [
-                "bin/composerCommandIntegrator.php"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "MagentoHackathon\\Composer\\Command": "src/"
-                }
-            },
-            "license": [
-                "OSL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Daniel Fahlke aka Flyingmana",
-                    "email": "daniel@digitalmanufaktur.com"
-                }
-            ],
-            "description": "module to create binaries and scripts which get executed in context of composer so they are able to access content from the composer.json ",
-            "support": {
-                "source": "https://github.com/magento-hackathon/composer-command-integrator/tree/1.0",
-                "issues": "https://github.com/magento-hackathon/composer-command-integrator/issues"
-            },
-            "time": "2013-07-31 03:10:25"
         },
         {
             "name": "phpunit/dbunit",
