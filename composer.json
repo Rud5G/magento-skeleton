@@ -10,8 +10,8 @@
         "ivanchepurnyi/ecomdev_phpunit": "0.3.1"
     },
     "require": {
-        "magento-hackathon/magento-composer-installer": "*",
-        "magento-hackathon/composer-command-integrator": "*",
+        "magento-hackathon/magento-composer-installer": "1.3.*",
+        "magento-hackathon/composer-command-integrator": "1.0",
         "jhhello/magento_composer_autoloader": "v0.1",
         "quafzi/magento-core-installer": "dev-master",
         "n98/magerun": "dev-develop",
@@ -49,7 +49,8 @@
         }
     ],
     "extra":{
-        "magento-root-dir": "../htdocs/"
+        "magento-root-dir": "htdocs/",
+        "magento-force": true
     }
 
 }
