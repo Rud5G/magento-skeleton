@@ -173,5 +173,10 @@ htdocs/var/
 #jhhello/magento_composer_autoloader
 htdocs/app/code/local/Varien
 
+#ivanchepurnyi/ecomdev_phpunit
+htdocs/app/code/community/EcomDev
+htdocs/app/etc/modules/EcomDev_PHPUnit.xml
+htdocs/app/etc/modules/EcomDev_PHPUnitTest.xml
+
 #Dev Stuff
 clean.sh
