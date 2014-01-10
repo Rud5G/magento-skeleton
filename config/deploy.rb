@@ -5,8 +5,9 @@ set :magento_version,   'magento_ce_1.8.0.0'
 #git details
 set :scm, :git
 set :repo_url,      'git@bitbucket.org:jhhello/jh_magento_skeleton.git'
-set :branch,        'master'
 set :deploy_via,    :remote_cache
+set :branch,        'master'
+
 
 set :linked_dirs, %w{htdocs/sitemaps htdocs/media htdocs/var vendor}
 
@@ -32,7 +33,9 @@ namespace :deploy do
     end
   end
 
-  before 'deploy:updated', 'magerun:install_magento'
-  after 'magerun:install_magento', 'composer:install_no_dev'
+  before    'deploy:updated',           'composer:install_no_dev'
+  after     'composer:install_no_dev',  'magento:deploy_core'
+  after     'magento:deploy_core',      'magento:deploy_modules'
+
   after :finishing, 'deploy:cleanup'
 end
