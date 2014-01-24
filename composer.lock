@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5e130586ce34a9ad0c5dad7ccd5828a9",
+    "hash": "03d8edce3596bccb73f48a234d027c37",
     "packages": [
         {
             "name": "composer/composer",
@@ -121,12 +121,12 @@
             "time": "2013-06-09 18:05:57"
         },
         {
-            "name": "jhhello/jh_magento_bolierplate_ce",
+            "name": "jhhello/jh_magento_boilerplate_ce",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:jhhello/jh_magento_bolierplate_ce_composer.git",
-                "reference": "b5bccd16ac23988d5cbd8970347d3c6919df6522"
+                "url": "git@bitbucket.org:jhhello/jh_magento_boilerplate_ce.git",
+                "reference": "ea914169329bba2161f154eeed917ab221ddb19a"
             },
             "require-dev": {
                 "phpdocumentor/phpdocumentor": "dev-master"
@@ -163,7 +163,7 @@
                 }
             ],
             "description": "Jh Boilerplate CE Module",
-            "time": "2014-01-24 15:19:50"
+            "time": "2014-01-24 17:17:06"
         },
         {
             "name": "jhhello/magento_ce_1.8.10",
@@ -49316,7 +49316,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "jhhello/jh_magento_bolierplate_ce": 20,
+        "jhhello/jh_magento_boilerplate_ce": 20,
         "quafzi/magento-core-installer": 20,
         "n98/magerun": 20,
         "jhhello/magento_ce_1.8.10": 20,
