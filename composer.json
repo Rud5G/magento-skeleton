@@ -2,19 +2,20 @@
     "name": "aydinhassan/magento-skeleton",
     "description": "A Magento Skeleton Application",
     "require-dev": {
-        "phpunit/phpunit": "3.7.*",
+        "phpunit/phpunit": "3.7.29",
         "phpunit/phpunit-selenium": "1.3.2",
         "phpunit/dbunit": "1.2.3",
-        "phpunit/phpunit": "3.7.x-dev",
         "phpunit/phpunit-story": "1.0.2",
-        "ivanchepurnyi/ecomdev_phpunit": "0.3.1"
+        "ivanchepurnyi/ecomdev_phpunit": "dev-dev",
+        "mikey179/vfsStream": "*"
     },
     "require": {
-        "magento-hackathon/magento-composer-installer": "1.3.*",
+        "jhhello/jh_magento_bolierplate_ce": "dev-master",
+        "magento-hackathon/magento-composer-installer": "1.3.1",
         "magento-hackathon/composer-command-integrator": "1.0",
         "jhhello/magento_composer_autoloader": "v0.1",
         "quafzi/magento-core-installer": "dev-master",
-        "n98/magerun": "dev-develop",
+        "n98/magerun": "dev-no-download-create-db",
         "jhhello/magento_ce_1.8.10": "dev-master"
     },
     "authors": [
@@ -37,20 +38,36 @@
             "type": "vcs",
             "url": "git@bitbucket.org:jhhello/magento_ce_1.8.0.0"
         },
+
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:AydinHassan/test-magento_ce_1.8.1.0.git"
+
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/AydinHassan/n98-magerun.git"
+
+        },
         {
             "type": "vcs",
             "url": "https://github.com/AydinHassan/magento-core-installer.git"
 
         },
         {
+            "url": "https://github.com/EcomDev/EcomDev_PHPUnit",
+            "type": "git"
+        },
+        {
             "type": "vcs",
-            "url": "git@bitbucket.org:AydinHassan/test-magento_ce_1.8.1.0.git"
-
+            "url": "git@bitbucket.org:jhhello/jh_magento_bolierplate_ce_composer.git"
         }
     ],
     "extra":{
         "magento-root-dir": "htdocs/",
-        "magento-force": true
+        "magento-force": true,
+        "magento-deploystrategy": "copy",
+        "skip-package-deployment": true
     }
 
 }

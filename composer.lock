@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "0d9903d903a9d82a3d7c28f9b07564a7",
+    "hash": "5e130586ce34a9ad0c5dad7ccd5828a9",
     "packages": [
         {
             "name": "composer/composer",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "fd297bce9222eea72ab7717b5621414aceefab6a"
+                "reference": "7adc41d02c3536b3e19a6b906cf0c4cf6d3beb70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/fd297bce9222eea72ab7717b5621414aceefab6a",
-                "reference": "fd297bce9222eea72ab7717b5621414aceefab6a",
+                "url": "https://api.github.com/repos/composer/composer/zipball/7adc41d02c3536b3e19a6b906cf0c4cf6d3beb70",
+                "reference": "7adc41d02c3536b3e19a6b906cf0c4cf6d3beb70",
                 "shasum": ""
             },
             "require": {
@@ -72,20 +72,20 @@
                 "dependency",
                 "package"
             ],
-            "time": "2014-01-06 18:37:30"
+            "time": "2014-01-20 18:10:11"
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.3.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "1d143fd8caf4d264602450bc01d7484af788706b"
+                "reference": "4ad4bc4b5c8d3c0f3cf55d2fedc2f65b313ec62f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/1d143fd8caf4d264602450bc01d7484af788706b",
-                "reference": "1d143fd8caf4d264602450bc01d7484af788706b",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/4ad4bc4b5c8d3c0f3cf55d2fedc2f65b313ec62f",
+                "reference": "4ad4bc4b5c8d3c0f3cf55d2fedc2f65b313ec62f",
                 "shasum": ""
             },
             "require": {
@@ -94,7 +94,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3.0-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -118,7 +118,52 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2013-12-16 21:56:48"
+            "time": "2013-06-09 18:05:57"
+        },
+        {
+            "name": "jhhello/jh_magento_bolierplate_ce",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:jhhello/jh_magento_bolierplate_ce_composer.git",
+                "reference": "394d0280980774b6d9737c75017f9038218452b8"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "dev-master"
+            },
+            "type": "magento-module",
+            "extra": {
+                "map": [
+                    [
+                        "src/code",
+                        "app/code/local/Jh/Boilerplate"
+                    ],
+                    [
+                        "src/Jh_Boilerplate.xml",
+                        "app/etc/modules/Jh_Boilerplate.xml"
+                    ],
+                    [
+                        "src/frontend/layout/jh_boilerplate.xml",
+                        "app/design/frontend/boilerplate/default/layout/jh_boilerplate.xml"
+                    ],
+                    [
+                        "src/frontend/template",
+                        "app/design/frontend/boilerplate/default/template"
+                    ],
+                    [
+                        "src/skin/frontend/assets",
+                        "skin/frontend/boilerplate/default"
+                    ]
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Ben Lill",
+                    "email": "ben@wearejh.com"
+                }
+            ],
+            "description": "Jh Boilerplate CE Module",
+            "time": "2014-01-24 12:33:40"
         },
         {
             "name": "jhhello/magento_ce_1.8.10",
@@ -126,11 +171,10 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:AydinHassan/test-magento_ce_1.8.1.0.git",
-                "reference": "50a9f466867dbb483417b0e8294109f18d745d41"
+                "reference": "d4771289c5515d9d8d60dac400b1dde645d8aec7"
             },
             "type": "magento-core",
             "extra": {
-                "magento-root-dir": "../htdocs",
                 "map": [
                     [
                         ".htaccess",
@@ -48376,7 +48420,7 @@
                     "email": "aydin@wearejh.com"
                 }
             ],
-            "time": "2014-01-03 16:14:18"
+            "time": "2014-01-15 14:02:07"
         },
         {
             "name": "jhhello/magento_composer_autoloader",
@@ -48461,7 +48505,7 @@
         },
         {
             "name": "magento-hackathon/composer-command-integrator",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "git://github.com/magento-hackathon/composer-command-integrator.git",
@@ -48507,17 +48551,20 @@
         },
         {
             "name": "magento-hackathon/magento-composer-installer",
-            "version": "dev-master",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "git://github.com/magento-hackathon/magento-composer-installer.git",
-                "reference": "5a4e95b44b5f5b845b7f982b14d932b372bc9645"
+                "reference": "1.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/magento-hackathon/magento-composer-installer/zipball/5a4e95b44b5f5b845b7f982b14d932b372bc9645",
-                "reference": "5a4e95b44b5f5b845b7f982b14d932b372bc9645",
+                "url": "https://github.com/magento-hackathon/magento-composer-installer/zipball/1.3.1",
+                "reference": "1.3.1",
                 "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
             },
             "require-dev": {
                 "composer/composer": "*",
@@ -48544,7 +48591,7 @@
             "authors": [
                 {
                     "name": "Daniel Fahlke aka Flyingmana",
-                    "email": "flyingmana@googlemail.com"
+                    "email": "daniel@digitalmanufaktur.com"
                 },
                 {
                     "name": "Jörg Weller",
@@ -48574,10 +48621,10 @@
                 "magento"
             ],
             "support": {
-                "source": "https://github.com/magento-hackathon/magento-composer-installer/tree/master",
+                "source": "https://github.com/magento-hackathon/magento-composer-installer/tree/1.3.1",
                 "issues": "https://github.com/magento-hackathon/magento-composer-installer/issues"
             },
-            "time": "2013-12-10 10:35:46"
+            "time": "2013-11-09 16:00:41"
         },
         {
             "name": "n98/junit-xml",
@@ -48617,29 +48664,29 @@
         },
         {
             "name": "n98/magerun",
-            "version": "dev-develop",
+            "version": "dev-no-download-create-db",
             "source": {
                 "type": "git",
-                "url": "https://github.com/netz98/n98-magerun.git",
-                "reference": "eab32f118610dd24e4e153cb9749f19d55f8b589"
+                "url": "https://github.com/AydinHassan/n98-magerun.git",
+                "reference": "b4877cee502667e48faec61297ddee7e9d892dfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netz98/n98-magerun/zipball/eab32f118610dd24e4e153cb9749f19d55f8b589",
-                "reference": "eab32f118610dd24e4e153cb9749f19d55f8b589",
+                "url": "https://api.github.com/repos/AydinHassan/n98-magerun/zipball/b4877cee502667e48faec61297ddee7e9d892dfc",
+                "reference": "b4877cee502667e48faec61297ddee7e9d892dfc",
                 "shasum": ""
             },
             "require": {
                 "composer/composer": "1.0.*@dev",
-                "fzaninotto/faker": "1.3.0",
+                "fzaninotto/faker": "1.2.0",
                 "n98/junit-xml": "1.0.0",
                 "php": ">=5.3.3",
-                "symfony/console": "2.4.1",
-                "symfony/event-dispatcher": "2.4.1",
-                "symfony/finder": "2.4.1",
-                "symfony/process": "2.4.1",
-                "symfony/validator": "2.4.1",
-                "symfony/yaml": "2.4.1",
+                "symfony/console": "2.4.0",
+                "symfony/event-dispatcher": "2.4.0",
+                "symfony/finder": "2.4.0",
+                "symfony/process": "2.4.0",
+                "symfony/validator": "2.4.0",
+                "symfony/yaml": "2.4.0",
                 "twig/twig": "1.*"
             },
             "require-dev": {
@@ -48656,7 +48703,6 @@
                     "Composer": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -48678,7 +48724,11 @@
                 "magento",
                 "magerun"
             ],
-            "time": "2014-01-06 15:18:06"
+            "support": {
+                "issues": "https://github.com/netz98/n98-magerun/issues",
+                "source": "https://github.com/AydinHassan/n98-magerun/tree/no-download-create-db"
+            },
+            "time": "2014-01-10 12:02:28"
         },
         {
             "name": "quafzi/magento-core-installer",
@@ -48733,7 +48783,7 @@
                 "magento"
             ],
             "support": {
-                "source": "https://github.com/AydinHassan/magento-core-installer/tree/features/add-mappings-generator-command"
+                "source": "https://github.com/AydinHassan/magento-core-installer/tree/master"
             },
             "time": "2014-01-03 11:00:24"
         },
@@ -48786,17 +48836,17 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.4.1",
+            "version": "v2.4.0",
             "target-dir": "Symfony/Component/Console",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "4c1ed2ff514bd85ee186eebb010ccbdeeab05af7"
+                "reference": "3c1496ae96d24ccc6c340fcc25f71d7a1ab4c12c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/4c1ed2ff514bd85ee186eebb010ccbdeeab05af7",
-                "reference": "4c1ed2ff514bd85ee186eebb010ccbdeeab05af7",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/3c1496ae96d24ccc6c340fcc25f71d7a1ab4c12c",
+                "reference": "3c1496ae96d24ccc6c340fcc25f71d7a1ab4c12c",
                 "shasum": ""
             },
             "require": {
@@ -48835,21 +48885,21 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-01 08:14:50"
+            "time": "2013-11-27 09:10:40"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v2.4.1",
+            "version": "v2.4.0",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "e3ba42f6a70554ed05749e61b829550f6ac33601"
+                "reference": "acd1707236f6eb96fbb8d58f63d289b72ebc2f6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/e3ba42f6a70554ed05749e61b829550f6ac33601",
-                "reference": "e3ba42f6a70554ed05749e61b829550f6ac33601",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/acd1707236f6eb96fbb8d58f63d289b72ebc2f6e",
+                "reference": "acd1707236f6eb96fbb8d58f63d289b72ebc2f6e",
                 "shasum": ""
             },
             "require": {
@@ -48889,21 +48939,21 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2013-12-28 08:12:03"
+            "time": "2013-12-03 14:52:22"
         },
         {
             "name": "symfony/finder",
-            "version": "v2.4.1",
+            "version": "v2.4.0",
             "target-dir": "Symfony/Component/Finder",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "6904345cf2b3bbab1f6d6e4ce1724cb99df9f00a"
+                "reference": "72356bf0646b11af1bae666c28a639bd8ede459f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/6904345cf2b3bbab1f6d6e4ce1724cb99df9f00a",
-                "reference": "6904345cf2b3bbab1f6d6e4ce1724cb99df9f00a",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/72356bf0646b11af1bae666c28a639bd8ede459f",
+                "reference": "72356bf0646b11af1bae666c28a639bd8ede459f",
                 "shasum": ""
             },
             "require": {
@@ -48936,21 +48986,21 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-01 08:14:50"
+            "time": "2013-11-26 16:40:27"
         },
         {
             "name": "symfony/process",
-            "version": "v2.4.1",
+            "version": "v2.4.0",
             "target-dir": "Symfony/Component/Process",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "58fdccb311e44f28866f976c2d7b3227e9f713db"
+                "reference": "87738ff42e2467730ed74d941866e95513844b70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/58fdccb311e44f28866f976c2d7b3227e9f713db",
-                "reference": "58fdccb311e44f28866f976c2d7b3227e9f713db",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/87738ff42e2467730ed74d941866e95513844b70",
+                "reference": "87738ff42e2467730ed74d941866e95513844b70",
                 "shasum": ""
             },
             "require": {
@@ -48983,7 +49033,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-05 02:10:50"
+            "time": "2013-11-26 16:40:27"
         },
         {
             "name": "symfony/property-access",
@@ -49100,17 +49150,17 @@
         },
         {
             "name": "symfony/validator",
-            "version": "v2.4.1",
+            "version": "v2.4.0",
             "target-dir": "Symfony/Component/Validator",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Validator.git",
-                "reference": "7ea4e53f8d68bf3ae9cca28765d49d7930618730"
+                "reference": "12d1f1e64a43ce9cc35151ca89dae1ae8882d991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Validator/zipball/7ea4e53f8d68bf3ae9cca28765d49d7930618730",
-                "reference": "7ea4e53f8d68bf3ae9cca28765d49d7930618730",
+                "url": "https://api.github.com/repos/symfony/Validator/zipball/12d1f1e64a43ce9cc35151ca89dae1ae8882d991",
+                "reference": "12d1f1e64a43ce9cc35151ca89dae1ae8882d991",
                 "shasum": ""
             },
             "require": {
@@ -49161,21 +49211,21 @@
             ],
             "description": "Symfony Validator Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-01 08:14:50"
+            "time": "2013-11-28 10:27:26"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.4.1",
+            "version": "v2.4.0",
             "target-dir": "Symfony/Component/Yaml",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "4e1a237fc48145fae114b96458d799746ad89aa0"
+                "reference": "1ae235a1b9d3ad3d9f3860ff20acc072df95b7f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/4e1a237fc48145fae114b96458d799746ad89aa0",
-                "reference": "4e1a237fc48145fae114b96458d799746ad89aa0",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/1ae235a1b9d3ad3d9f3860ff20acc072df95b7f5",
+                "reference": "1ae235a1b9d3ad3d9f3860ff20acc072df95b7f5",
                 "shasum": ""
             },
             "require": {
@@ -49208,7 +49258,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-12-28 08:12:03"
+            "time": "2013-11-26 16:40:27"
         },
         {
             "name": "twig/twig",
@@ -49216,12 +49266,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "4983af78f7b62a52866e60909768d4bb7d944a9b"
+                "reference": "ae89c8853582f074c1e8f26ac3b67b2c4fff2609"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/4983af78f7b62a52866e60909768d4bb7d944a9b",
-                "reference": "4983af78f7b62a52866e60909768d4bb7d944a9b",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/ae89c8853582f074c1e8f26ac3b67b2c4fff2609",
+                "reference": "ae89c8853582f074c1e8f26ac3b67b2c4fff2609",
                 "shasum": ""
             },
             "require": {
@@ -49257,22 +49307,22 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2014-01-05 16:48:49"
+            "time": "2014-01-08 07:21:35"
         }
     ],
     "packages-dev": [
         {
             "name": "ivanchepurnyi/ecomdev_phpunit",
-            "version": "v0.3.1",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "git://github.com/EcomDev/EcomDev_PHPUnit.git",
-                "reference": "v0.3.1"
+                "reference": "c607498d2299a8ee70fe86cebd6e4298dd68ba6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/EcomDev/EcomDev_PHPUnit/zipball/v0.3.1",
-                "reference": "v0.3.1",
+                "url": "https://github.com/EcomDev/EcomDev_PHPUnit/zipball/c607498d2299a8ee70fe86cebd6e4298dd68ba6e",
+                "reference": "c607498d2299a8ee70fe86cebd6e4298dd68ba6e",
                 "shasum": ""
             },
             "require": {
@@ -49291,10 +49341,48 @@
             "description": "Magento PHPUnit Integration",
             "homepage": "http://www.ecomdev.org/shop/code-testing/php-unit-test-suite.html",
             "support": {
-                "source": "https://github.com/EcomDev/EcomDev_PHPUnit/tree/v0.3.1",
+                "source": "https://github.com/EcomDev/EcomDev_PHPUnit/tree/dev",
                 "issues": "https://github.com/EcomDev/EcomDev_PHPUnit/issues"
             },
-            "time": "2013-01-31 23:23:12"
+            "time": "2013-11-07 16:47:59"
+        },
+        {
+            "name": "mikey179/vfsStream",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikey179/vfsStream.git",
+                "reference": "2a5c0827aefd5e553097fa114bd8c141f308f769"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/2a5c0827aefd5e553097fa114bd8c141f308f769",
+                "reference": "2a5c0827aefd5e553097fa114bd8c141f308f769",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "org\\bovigo\\vfs\\": "src/main/php"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "homepage": "http://vfs.bovigo.org/",
+            "time": "2014-01-11 11:50:17"
         },
         {
             "name": "phpunit/dbunit",
@@ -49600,16 +49688,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "3.7.x-dev",
+            "version": "3.7.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "92e8faf88773fa173b0ab2425ba4ade434c58c5d"
+                "reference": "faeb2d9f15dc83830d2db5e4c67acf1d68c9b5ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/92e8faf88773fa173b0ab2425ba4ade434c58c5d",
-                "reference": "92e8faf88773fa173b0ab2425ba4ade434c58c5d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/faeb2d9f15dc83830d2db5e4c67acf1d68c9b5ac",
+                "reference": "faeb2d9f15dc83830d2db5e4c67acf1d68c9b5ac",
                 "shasum": ""
             },
             "require": {
@@ -49670,7 +49758,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-12-29 07:28:17"
+            "time": "2014-01-15 06:46:38"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -49838,10 +49926,11 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "jhhello/jh_magento_bolierplate_ce": 20,
         "quafzi/magento-core-installer": 20,
         "n98/magerun": 20,
         "jhhello/magento_ce_1.8.10": 20,
-        "phpunit/phpunit": 20
+        "ivanchepurnyi/ecomdev_phpunit": 20
     },
     "platform": [
 
