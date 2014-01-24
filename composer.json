@@ -10,7 +10,7 @@
         "mikey179/vfsStream": "*"
     },
     "require": {
-        "jhhello/jh_magento_bolierplate_ce": "dev-master",
+        "jhhello/jh_magento_boilerplate_ce": "dev-master",
         "magento-hackathon/magento-composer-installer": "1.3.1",
         "magento-hackathon/composer-command-integrator": "1.0",
         "jhhello/magento_composer_autoloader": "v0.1",
@@ -60,7 +60,7 @@
         },
         {
             "type": "vcs",
-            "url": "git@bitbucket.org:jhhello/jh_magento_bolierplate_ce_composer.git"
+            "url": "git@bitbucket.org:jhhello/jh_magento_boilerplate_ce.git"
         }
     ],
     "extra":{
