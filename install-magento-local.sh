@@ -149,8 +149,8 @@ elif [[ "$type" == "install" ]]; then
     fi
 
     #Install composer dependencies - including dev
-    echo "Updating composer dependencies.."
-    ./composer.phar update
+    echo "Installing composer dependencies.."
+    ./composer.phar install --no-dev
 
     #bit of a hack to delete git history - we don't want the clone, we only want the files
     rm -rf htdocs/.git
