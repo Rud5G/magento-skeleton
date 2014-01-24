@@ -49,7 +49,6 @@ uninstallMagento()
 }
 
 #vars
-sampleData=no
 forceInstall=false
 
 type=$1
@@ -159,4 +158,7 @@ else
     usage
 fi
 
+/usr/bin/env php vendor/bin/composerCommandIntegrator.php magento-module-deploy
+./n98-magerun.phar cache:clean
+./n98-magerun.phar cache:flush
 echo -e "Done!\n"
