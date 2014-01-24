@@ -5,7 +5,7 @@ namespace :magerun do
             within release_path do
                 execute "cp", "#{fetch(:magerunconfig)} ~/#{fetch(:magerunconfig)}"
                 db_config = load_database_config
-                execute fetch(:magerun), "#{fetch(:magerun_install_flags)} --magentoVersionByName=#{fetch(:magentoversion)} --installationFolder=#{fetch(:installationPath)} --dbHost=#{db_config['database_host']} --dbUser=#{db_config['database_user']} --dbPass=#{db_config['database_password']} --dbName=#{db_config['database_db']} --baseUrl=#{fetch(:baseUrl)} --replaceHtaccessFile=#{fetch(:replaceHtaccess)} --useDefaultConfigParams=yes --installSampleData=no"
+                execute fetch(:magerun), "#{fetch(:magerun_install_flags)} --installationFolder=#{fetch(:installationPath)} --dbHost=#{db_config['database_host']} --dbUser=#{db_config['database_user']} --dbPass=#{db_config['database_password']} --dbName=#{db_config['database_db']} --baseUrl=#{fetch(:baseUrl)} --replaceHtaccessFile=#{fetch(:replaceHtaccess)} --useDefaultConfigParams=yes --installSampleData=no"
             end
         end
     end
@@ -142,15 +142,14 @@ end
 namespace :load do
   task :defaults do
     set :magerunconfig,         '.n98-magerun.yaml'
-    set :magerun_install_flags, 'install '
+    set :magerun_install_flags, 'install --noDownload'
     set :magerun,               './n98-magerun.phar'
-    set :magentoversion,        'jh-magento-ce-1.8.0.0'
     set :installationPath,      'htdocs'
     set :dbHost,                'localhost'
     set :dbUser,                'db-user'
     set :dbPass,                'db-pass'
     set :dbName,                'db-name'
     set :baseUrl,               'base-url'
-    set :replaceHtaccessFile,   'yes'
+    set :replaceHtaccess,       'yes'
   end
 end

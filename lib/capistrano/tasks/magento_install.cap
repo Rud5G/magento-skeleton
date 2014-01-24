@@ -1,6 +1,18 @@
+
 namespace :magento do
-    desc "Install composer without dev dependencies"
-    task :copy do
+
+    desc "Install Magento for the first time"
+    task :install do
+        invoke 'magento:deploy_core'
+        invoke 'magento:deploy_modules'
+    end
+
+    #Before we install do a deploy
+    before 'magento:install', 'deploy'
+    after 'magento:install', 'magerun:install_magento'
+
+    desc "Update Magento, used after initial deploy"
+    task :update do
         on roles(:all) do |host|
             within release_path do
                 magento_version = fetch(:magento_version)
@@ -9,12 +21,23 @@ namespace :magento do
             end
         end
     end
-end
 
-namespace :load do
-  task :defaults do
-    set :composer_flags,        'install --no-dev --no-scripts --optimize-autoloader --prefer-dist'
-    set :composer_dev_flags,    'install'
-    set :composer,              './composer.phar'
-  end
+    desc "Deploy Magento Core"
+    task :deploy_core do
+        on roles(:all) do |host|
+            within release_path do
+                execute "php", "vendor/bin/composerCommandIntegrator.php magento-core-deploy"
+            end
+        end
+    end
+
+    desc "Deploy Magento Modules"
+    task :deploy_modules do
+        on roles(:all) do |host|
+            within release_path do
+                execute "php", "vendor/bin/composerCommandIntegrator.php magento-module-deploy"
+            end
+        end
+    end
+
 end
