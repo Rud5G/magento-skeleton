@@ -25,19 +25,20 @@ commands:
           type: git
           reference: master
 
-    defaults:
-      currency: GBP
-      locale: en_US
-      timezone: Europe/London
-      use_secure: no
-      use_rewrites: yes
-      session_save: files
-      admin_username: wearejh
-      admin_firstname: John
-      admin_lastname: Doe
-      admin_password: password123
-      admin_frontname: admin
-      admin_email: john.doe@example.com
+    installation:
+      defaults:
+        currency: GBP
+        locale: en_US
+        timezone: Europe/London
+        use_secure: no
+        use_rewrites: yes
+        session_save: files
+        admin_username: wearejh
+        admin_firstname: John
+        admin_lastname: Doe
+        admin_password: password123
+        admin_frontname: admin
+        admin_email: john.doe@example.com
 
     #example of how to add demo data packages, if we decide to host our own
     demo-data-packages:
