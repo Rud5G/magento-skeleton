@@ -3,8 +3,10 @@
 usage()
 {
 
-  echo "usage: $0 install|uninstall options"
+  echo "usage: $0 tall|uninstall options"
   echo '
+  usage: $0 install|uninstall options
+
   This script installs or uninstalls Magento
 
   OPTIONS:
@@ -49,6 +51,7 @@ uninstallMagento()
 }
 
 #vars
+sampleData=no
 forceInstall=false
 
 type=$1
@@ -161,4 +164,5 @@ fi
 /usr/bin/env php vendor/bin/composerCommandIntegrator.php magento-module-deploy
 ./n98-magerun.phar cache:clean
 ./n98-magerun.phar cache:flush
+./n98-magerun.phar config:set dev/template/allow_symlink 1
 echo -e "Done!\n"

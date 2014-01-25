@@ -136,6 +136,15 @@ namespace :magerun do
             end
         end
     end
+
+    desc "Turn on template Sym Links"
+    task :enable_symlinks do
+         on roles(:app) do |host|
+             within release_path do
+                 execute fetch(:magerun), "config:set dev/template/allow_symlink 1"
+             end
+         end
+     end
 end
 
 #These parameters should be specified in the environment specific configuration files
