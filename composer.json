@@ -10,13 +10,13 @@
         "mikey179/vfsStream": "*"
     },
     "require": {
+        "composer/composer": "1.0.0-alpha8",
         "jhhello/jh_magento_boilerplate_ce": "dev-master",
-        "magento-hackathon/magento-composer-installer": "1.3.1",
+        "magento-hackathon/magento-composer-installer": "1.4.0",
         "magento-hackathon/composer-command-integrator": "1.0",
-        "jhhello/magento_composer_autoloader": "v0.1",
-        "quafzi/magento-core-installer": "dev-master",
-        "n98/magerun": "dev-no-download-create-db",
-        "jhhello/magento_ce_1.8.10": "dev-master"
+        "jhhello/magento-composer-autoloader": "1.0.1",
+        "quafzi/magento-core-installer": "1.0.0",
+        "jhhello/magento-ce-1.8.1.0": "1.0.0"
     },
     "authors": [
         {
@@ -31,28 +31,12 @@
             "url": "http://packages.firegento.com"
         },
         {
-            "type": "vcs",
-            "url": "git@bitbucket.org:jhhello/jh_magento_composer_autoloader.git"
+            "type": "git",
+            "url": "git@bitbucket.org:jhhello/magento-composer-autoloader.git"
         },
         {
             "type": "vcs",
-            "url": "git@bitbucket.org:jhhello/magento_ce_1.8.0.0"
-        },
-
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:AydinHassan/test-magento_ce_1.8.1.0.git"
-
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/AydinHassan/n98-magerun.git"
-
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/AydinHassan/magento-core-installer.git"
-
+            "url": "git@bitbucket.org:jhhello/magento-ce-1.8.1.0.git"
         },
         {
             "url": "https://github.com/EcomDev/EcomDev_PHPUnit",
@@ -61,12 +45,21 @@
         {
             "type": "vcs",
             "url": "git@bitbucket.org:jhhello/jh_magento_boilerplate_ce.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/AydinHassan/magento-composer-installer.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/AydinHassan/magento-core-installer.git"
         }
     ],
     "extra":{
         "magento-root-dir": "htdocs/",
         "magento-force": true,
-        "skip-package-deployment": true
+        "skip-package-deployment": true,
+        "auto-append-gitignore": true
     }
 
 }
