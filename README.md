@@ -2,6 +2,10 @@
 
 This module is designed to alleviate the task of setting up a new project. It also brings in some new work flows and processes to make our lives easier.
 
+## Dependency Graph
+
+![](https://bitbucket.org/jhhello/magento-skeleton/wiki/deps.svg)
+
 ## Goals ##
 
 1. [x] Stop putting Magento Source code in project repositories.
