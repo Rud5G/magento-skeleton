@@ -3,6 +3,9 @@ vendor/
 .idea
 .DS_Store
 
+htdocs/composer.json
+htdocs/.gitignore
+
 #Magento files
 htdocs/app/code/community/Cm
 htdocs/app/code/community/Phoenix
