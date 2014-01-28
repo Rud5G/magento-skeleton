@@ -6,6 +6,9 @@ vendor/
 htdocs/composer.json
 htdocs/.gitignore
 
+#PhpUnit config
+htdocs/app/etc/local.xml.phpunit
+
 #Magento files
 htdocs/app/code/community/Cm
 htdocs/app/code/community/Phoenix
