@@ -148,6 +148,7 @@ elif [[ "$type" == "install" ]]; then
         rm -rf htdocs
         git checkout -- htdocs
         echo "Something went wrong :("
+        echo "Usually the case that composer does not have enough memory - check the PHP CLI INI memory limit"
         exit 1
     fi
 
