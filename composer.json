@@ -55,11 +55,11 @@
             "url": "https://github.com/AydinHassan/magento-core-installer.git"
         }
     ],
+    "process-timeout": "600",
     "extra":{
         "magento-root-dir": "htdocs/",
         "magento-force": true,
-        "skip-package-deployment": true,
-        "auto-append-gitignore": true
+        "skip-package-deployment": true
     }
 
 }
