@@ -9,8 +9,6 @@ namespace :magento do
 
     #Before we install do a deploy
     before 'magento:install', 'deploy'
-    after 'magento:install', 'magerun:install_magento'
-    after 'magento:install', 'magerun:enable_symlinks'
 
     desc "Update Magento, used after initial deploy"
     task :update do

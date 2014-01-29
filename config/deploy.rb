@@ -39,3 +39,7 @@ namespace :deploy do
 
   after :finishing, 'deploy:cleanup'
 end
+
+#After installing magento:install task, configure magento and enable template symlinks
+after 'magento:install', 'magerun:install_magento'
+after 'magento:install', 'magerun:enable_symlinks'
