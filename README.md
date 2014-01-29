@@ -12,8 +12,8 @@ This module is designed to alleviate the task of setting up a new project. It al
 1. [x] Allow extensions to be installable by Composer.
 1. [x] Simplify Project setup procedure.
 1. [x] Utilise n98-magerun tool.
-1. [ ] Deploy with Capistrano.
-1. [ ] Provide a framework for Unit Testing
+1. [x] Deploy with Capistrano.
+1. [x] Provide a framework for Unit Testing
 
 
 ## Documentation ##
@@ -35,7 +35,7 @@ Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton
 - [ ] Docs - Configuring a project for capistrano deploy
 - [x] Docs - Using n98-magerun
 - [x] Docs - Provide justification for goals of project
-- [ ] Docs - Unit Testing
+- [x] Docs - Unit Testing
 - [x] Local Install Script - Option for installing sample data
 - [x] Investigate and implement Composer autoloading into Magento Bootstrap process
 - [x] Investigate loading DB credentials for Capistrano via local only file
