@@ -180,3 +180,4 @@ htdocs/app/etc/modules/EcomDev_PHPUnitTest.xml
 
 #Dev Stuff
 clean.sh
+installnd.sh
