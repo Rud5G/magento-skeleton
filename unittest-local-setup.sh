@@ -64,7 +64,7 @@ if [ -z "$dbUser" ] || [ -z "$dbPass" ] || [ -z "$dbHost" ] || [ -z "$dbName" ] 
     usage
 fi
 
-if [ ! -f "htdocs/app/local.xml" ]; then
+if [ ! -f "htdocs/app/etc/local.xml" ]; then
     echo "
     Please setup Magento before installing Unit Tests
     "
