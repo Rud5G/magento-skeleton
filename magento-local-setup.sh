@@ -57,18 +57,6 @@ uninstallMagento()
     fi
 }
 
-setupUnitTests()
-{
-    if [[ -z $1 ]]; then
-        return 0
-    fi
-
-    databaseName=$1
-    mysql -u root -proot -Bse "CREATE DATABASE databaseName-tests;"
-
-}
-
-
 #vars
 forceInstall=false
 
@@ -178,11 +166,9 @@ elif [[ "$type" == "install" ]]; then
     rm -rf htdocs/.git
 
     /usr/bin/env php vendor/bin/composerCommandIntegrator.php magento-module-deploy
+    ./n98-magerun.phar config:set dev/template/allow_symlink 1
     ./n98-magerun.phar cache:clean
     ./n98-magerun.phar cache:flush
-    ./n98-magerun.phar config:set dev/template/allow_symlink 1
-
-    setupUnitTests
 else
     usage
 fi
