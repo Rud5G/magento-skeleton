@@ -6,6 +6,12 @@ namespace :magerun do
                 execute "cp", "#{fetch(:magerunconfig)} ~/#{fetch(:magerunconfig)}"
                 db_config = load_database_config
                 execute fetch(:magerun), "#{fetch(:magerun_install_flags)} --installationFolder=#{fetch(:installationPath)} --dbHost=#{db_config['database_host']} --dbUser=#{db_config['database_user']} --dbPass=#{db_config['database_password']} --dbName=#{db_config['database_db']} --baseUrl=#{fetch(:baseUrl)} --replaceHtaccessFile=#{fetch(:replaceHtaccess)} --useDefaultConfigParams=yes --installSampleData=no --forceUseDb=yes"
+
+                if test("[ -e #{shared_path}/local.xml ]")
+                else
+                    execute "mv #{release_path}/htdocs/app/etc/local.xml #{shared_path}/local.xml"
+                    execute "ln -s #{shared_path}/local.xml #{release_path}/htdocs/app/etc/local.xml"
+                end
             end
         end
     end
@@ -142,6 +148,7 @@ namespace :magerun do
          on roles(:app) do |host|
              within release_path do
                  execute fetch(:magerun), "config:set dev/template/allow_symlink 1"
+                 set :linked_files, %w{htdocs/app/etc/local.xml}
              end
          end
      end

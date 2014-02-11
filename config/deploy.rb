@@ -10,6 +10,7 @@ set :branch,        'master'
 
 set :linked_dirs, %w{htdocs/sitemaps htdocs/media htdocs/var vendor}
 
+
 # set :log_level, :debug
 # set :pty, true
 
@@ -32,10 +33,23 @@ namespace :deploy do
     end
   end
 
+  task :symlink_localxml do
+    on roles(:app) do |host|
+        within release_path do
+
+        if test("[ -e #{release_path}/htdocs/app/etc/local.xml ]")
+        else
+            execute "ln -s #{shared_path}/local.xml #{release_path}/htdocs/app/etc/local.xml"
+        end
+      end
+    end
+  end
+
   before    'deploy:updated',           'composer:install_no_dev'
   after     'composer:install_no_dev',  'magento:deploy_core'
   after     'magento:deploy_core',      'magento:deploy_modules'
 
+  after :finishing, 'deploy:symlink_localxml'
   after :finishing, 'deploy:cleanup'
 end
 
