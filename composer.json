@@ -11,7 +11,7 @@
     },
     "require": {
         "composer/composer": "1.0.0-alpha8",
-        "jhhello/jh_magento_boilerplate_ce": "dev-master",
+        "jhhello/magento-boilerplate-ce": "dev-master",
         "magento-hackathon/magento-composer-installer": "1.4.0",
         "magento-hackathon/composer-command-integrator": "1.0",
         "jhhello/magento-composer-autoloader": "1.0.1",
@@ -44,7 +44,7 @@
         },
         {
             "type": "vcs",
-            "url": "git@bitbucket.org:jhhello/jh_magento_boilerplate_ce.git"
+            "url": "git@bitbucket.org:jhhello/jmagento-boilerplate-ce.git"
         },
         {
             "type": "vcs",
