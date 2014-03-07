@@ -18,7 +18,7 @@ This module is designed to alleviate the task of setting up a new project. It al
 
 ## Documentation ##
 
-Head over to the -> [Wiki](https://bitbucket.org/AydinHassan/jh_magento_skeleton/wiki/Home)
+Head over to the -> [Wiki](https://bitbucket.org/jhhello/magento-skeleton/wiki/Home)
 
 ## Todo ##
 - [x] Remove modman stuff in extension modules and replace with composer. Update Extension base repo and also export/carousel module.
