@@ -42,7 +42,13 @@ commands:
           url: git@bitbucket.org:jhhello/magento-ee-1.13.0.2.git
           type: git
           reference: 1.0.0
-
+		  
+      - name: jh-magento-ee-1.13.1.0
+        version: 1.13.1.0
+        source:
+          url: git@bitbucket.org:jhhello/magento-ee-1.13.1.0.git
+          type: git
+          reference: 1.0.0
 
     installation:
       defaults:
