@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "a5496d5d2335760b75ff4deec4cddd9d",
+    "hash": "18b882cd46bbf111171d8625d47b83c3",
     "packages": [
         {
             "name": "composer/composer",
@@ -48471,31 +48471,38 @@
         },
         {
             "name": "magento-hackathon/magento-composer-installer",
-            "version": "1.4.0",
+            "version": "2.0.0-beta4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/AydinHassan/magento-composer-installer.git",
-                "reference": "12ceccd7c994943a031240c806da723d66ea3987"
+                "url": "git://github.com/magento-hackathon/magento-composer-installer.git",
+                "reference": "2.0.0-beta4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AydinHassan/magento-composer-installer/zipball/12ceccd7c994943a031240c806da723d66ea3987",
-                "reference": "12ceccd7c994943a031240c806da723d66ea3987",
+                "url": "https://github.com/magento-hackathon/magento-composer-installer/zipball/2.0.0-beta4",
+                "reference": "2.0.0-beta4",
                 "shasum": ""
             },
+            "require": {
+                "composer-plugin-api": "1.0.0"
+            },
             "require-dev": {
-                "composer/composer": "*",
-                "phpunit/phpunit": "*"
+                "composer/composer": "*@dev",
+                "mikey179/vfsstream": "*",
+                "phpunit/phpunit": "*",
+                "symfony/process": "*"
             },
             "suggest": {
-                "magento-hackathon/composer-command-integrator": "*"
+                "magento-hackathon/composer-command-integrator": "*",
+                "theseer/autoload": "~1.14",
+                "zetacomponents/console-tools": "dev-master"
             },
-            "type": "composer-installer",
+            "type": "composer-plugin",
             "extra": {
                 "composer-command-registry": [
                     "MagentoHackathon\\Composer\\Magento\\Command\\DeployCommand"
                 ],
-                "class": "MagentoHackathon\\Composer\\Magento\\Installer"
+                "class": "MagentoHackathon\\Composer\\Magento\\Plugin"
             },
             "autoload": {
                 "psr-0": {
@@ -48538,9 +48545,10 @@
                 "magento"
             ],
             "support": {
-                "source": "https://github.com/AydinHassan/magento-composer-installer/tree/1.4.0"
+                "source": "https://github.com/magento-hackathon/magento-composer-installer/tree/2.0.0-beta4",
+                "issues": "https://github.com/magento-hackathon/magento-composer-installer/issues"
             },
-            "time": "2014-01-26 01:33:13"
+            "time": "2014-05-10 13:36:26"
         },
         {
             "name": "quafzi/magento-core-installer",

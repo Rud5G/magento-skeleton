@@ -11,7 +11,7 @@
     },
     "require": {
         "composer/composer": "1.0.0-alpha8",
-        "magento-hackathon/magento-composer-installer": "1.4.0",
+        "magento-hackathon/magento-composer-installer": "~2.0.0-beta4",
         "magento-hackathon/composer-command-integrator": "1.0",
         "jhhello/magento-composer-autoloader": "1.0.1",
         "quafzi/magento-core-installer": "1.0.0",
@@ -40,10 +40,6 @@
         {
             "url": "https://github.com/EcomDev/EcomDev_PHPUnit",
             "type": "git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/AydinHassan/magento-composer-installer.git"
         },
         {
             "type": "vcs",
