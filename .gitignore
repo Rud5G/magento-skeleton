@@ -143,15 +143,7 @@ htdocs/get.php
 htdocs/mage
 htdocs/js/
 htdocs/shell/
-htdocs/media/catalog/product/cache/**/*
-htdocs/media/customer
-htdocs/media/css/*.css
-htdocs/media/dhl
-htdocs/media/downloadable/
-htdocs/media/import/
-htdocs/media/js/*
-htdocs/media/xmlconnect
-htdocs/media/.htaccess
+/htdocs/media/*
 htdocs/pear/
 htdocs/php.ini.sample
 htdocs/pkginfo/
@@ -182,5 +174,3 @@ htdocs/app/etc/modules/EcomDev_PHPUnit.xml
 htdocs/app/etc/modules/EcomDev_PHPUnitTest.xml
 
 #Dev Stuff
-clean.sh
-installnd.sh
