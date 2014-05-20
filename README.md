@@ -2,9 +2,28 @@
 
 This module is designed to alleviate the task of setting up a new project. It also brings in some new work flows and processes to make our lives easier.
 
-## Dependency Graph
+The JH Magento Skeleton is a collection of tools and processes, it strings together some of the following great tools & projects:
 
-![](https://bitbucket.org/jhhello/magento-skeleton/wiki/deps.svg)
+1. [netz98 magerun](https://github.com/netz98/n98-magerun)
+1. [Magento Composer Installer](https://github.com/magento-hackathon/magento-composer-installer)
+1. [Capistrano](http://capistranorb.com/)
+1. [Composer](https://getcomposer.org/)
+1. And... probably more that i've missed!
+
+The [Wiki](https://github.com/AydinHassan/magento-skeleton/wiki) should provide most of the documentation to get you started. Some of it is a little outdated and
+refers to Bitbucket (Where this project was privately hosted) but that stuff should be self-explanatory, although I will updated it due time.
+
+The main aim of this project was to get Magento Core out of the repository. This is achieved by using special packages with mappings. Please read here: [Core Package Creation](https://github.com/AydinHassan/magento-skeleton/wiki/Creating-a-Core-Package)
+
+You can add as many Magento Versions as you want, to use them they must be added to your `.n98-magerun.yaml` file, and to deploy they must be added to your `composer.json`. 
+Read [here](https://github.com/AydinHassan/magento-skeleton/wiki/Installing-a-Project-Locally).
+
+Local installs, as shown [here](https://github.com/AydinHassan/magento-skeleton/wiki/Installing-a-Project-Locally) use `.n98-magerun.yaml` to load the packages. These can be any publically available Magento Repositories. Read
+the file for an example of how to add custom repositories. Read [here](https://github.com/netz98/n98-magerun/wiki/Magento-installer) for more information.
+
+For deploying, the Magento Version specified in the `composer.json` file will be used. This MUST be a repository with mappings as they are used to copy Magento from the `vendor` directory to the `htdocs` directory during deployment/
+
+
 
 ## Goals ##
 
@@ -26,13 +45,12 @@ Head over to the -> [Wiki](https://bitbucket.org/jhhello/magento-skeleton/wiki/H
 - [x] Capistrano - Create task to run front end scripts
 - [x] Capistrano - Create tasks for various magento admin tasks. Take a look at [Magentify](https://github.com/alistairstead/Magentify)
 - [x] Capistrano - Create task for installing Magento (eg CE && EE)
-- [ ] Capistrano - Create tasks for setting up users/vhosts/directories
 - [x] Docs - Detail process for setting memory limit for MAMP PHP CLI access
 - [x] Docs - How to install a Magento Extension (Include remarks about having to gitignore module files).
 - [x] Docs - Using Composer
 - [x] Docs - Setting up a new project
 - [x] Docs - Installing project locally
-- [ ] Docs - Configuring a project for capistrano deploy
+- [x] Docs - Configuring a project for capistrano deploy
 - [x] Docs - Using n98-magerun
 - [x] Docs - Provide justification for goals of project
 - [x] Docs - Unit Testing
