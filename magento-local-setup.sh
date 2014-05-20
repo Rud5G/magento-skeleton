@@ -5,13 +5,13 @@
 # also provides an uninstall
 # command
 #
-# Author: Aydin Hassan <aydin@wearejh.com>
+# Author: Aydin Hassan <aydin@hotmail.co.uk>
 #
 
 usage()
 {
 
-  echo '
+  echo "
   usage: $0 install|uninstall options
 
   This script installs or uninstalls Magento
@@ -30,7 +30,7 @@ usage()
      -s                If specified will install sample data (OPTIONAL)
 
      All OPTIONAL options, if not specified, will be prompted for at runtime.
-'
+"
 }
 
 uninstallMagento()
@@ -64,12 +64,12 @@ type=$1
 shift
 
 if [[ "$1" ==  "-?" || "$1" ==  "--help" ||  "$1" ==  "?" ||  "$1" ==  "help" ]]; then
-    usage
+    usage $0
     exit 0
 fi
 
 if [[ "$type" != "install" && "$type" != "uninstall" ]]; then
-    usage
+    usage $0
     exit 1
 fi
 
@@ -170,7 +170,7 @@ elif [[ "$type" == "install" ]]; then
     ./n98-magerun.phar cache:clean
     ./n98-magerun.phar cache:flush
 else
-    usage
+    usage $0
 fi
 
 echo -e "Done!\n"
