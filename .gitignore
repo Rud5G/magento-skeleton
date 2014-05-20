@@ -21,6 +21,7 @@ htdocs/app/design/frontend/enterprise/iphone/
 htdocs/app/design/frontend/default/blank/
 htdocs/app/design/frontend/default/iphone/
 htdocs/app/design/frontend/default/modern/
+htdocs/app/design/frontend/rwd/default
 htdocs/app/design/install/
 htdocs/app/etc/modules/Enterprise_AdminGws.xml
 htdocs/app/etc/modules/Enterprise_Banner.xml
@@ -162,6 +163,7 @@ htdocs/skin/frontend/default/french/
 htdocs/skin/frontend/default/german/
 htdocs/skin/frontend/default/iphone/
 htdocs/skin/frontend/default/modern/
+htdocs/skin/frontend/rwd/default/
 htdocs/skin/install/
 htdocs/var/
 
