@@ -25,6 +25,9 @@ For deploying, the Magento Version specified in the `composer.json` file will be
 
 Remember that Enterprise Versions of Magento must be stored privately. We do this using Bitbucket and it works fine!
 
+One of the great things to come out of this project is that you can test Magento upgrades so easily. You simply add the new version of Magento to your `.n98-magerun.yaml` config file, uninstall the current Magento version & reinstall.
+It also discourages core hacks, as Magento is always applied last.
+
 ## Goals ##
 
 1. [x] Stop putting Magento Source code in project repositories.
