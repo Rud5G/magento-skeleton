@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9a0709999fa235166d0594907d417969",
+    "hash": "a5496d5d2335760b75ff4deec4cddd9d",
     "packages": [
         {
             "name": "composer/composer",
@@ -62,7 +62,8 @@
                 {
                     "name": "Nils Adermann",
                     "email": "naderman@naderman.de",
-                    "homepage": "http://www.naderman.de"
+                    "homepage": "http://www.naderman.de",
+                    "role": "Developer"
                 }
             ],
             "description": "Dependency Manager",
@@ -73,51 +74,6 @@
                 "package"
             ],
             "time": "2014-01-06 18:39:59"
-        },
-        {
-            "name": "jhhello/jh_magento_boilerplate_ce",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@bitbucket.org:jhhello/jh_magento_boilerplate_ce.git",
-                "reference": "ea914169329bba2161f154eeed917ab221ddb19a"
-            },
-            "require-dev": {
-                "phpdocumentor/phpdocumentor": "dev-master"
-            },
-            "type": "magento-module",
-            "extra": {
-                "map": [
-                    [
-                        "src/code",
-                        "app/code/local/Jh/Boilerplate"
-                    ],
-                    [
-                        "src/Jh_Boilerplate.xml",
-                        "app/etc/modules/Jh_Boilerplate.xml"
-                    ],
-                    [
-                        "src/frontend/layout/jh_boilerplate.xml",
-                        "app/design/frontend/boilerplate/default/layout/jh_boilerplate.xml"
-                    ],
-                    [
-                        "src/frontend/template",
-                        "app/design/frontend/boilerplate/default/template"
-                    ],
-                    [
-                        "src/skin/frontend/assets",
-                        "skin/frontend/boilerplate/default/assets"
-                    ]
-                ]
-            },
-            "authors": [
-                {
-                    "name": "Ben Lill",
-                    "email": "ben@wearejh.com"
-                }
-            ],
-            "description": "Jh Boilerplate CE Module",
-            "time": "2014-01-24 17:17:06"
         },
         {
             "name": "jhhello/magento-ce-1.8.1.0",
@@ -48692,21 +48648,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "47e82eadf64a81e0a778c7249c7292987f1bfcff"
+                "reference": "50be4f30d0a93404e5d62b05fd7294492cf64c4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/47e82eadf64a81e0a778c7249c7292987f1bfcff",
-                "reference": "47e82eadf64a81e0a778c7249c7292987f1bfcff",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/50be4f30d0a93404e5d62b05fd7294492cf64c4f",
+                "reference": "50be4f30d0a93404e5d62b05fd7294492cf64c4f",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
+                "psr/log": "~1.0",
                 "symfony/event-dispatcher": "~2.1"
             },
             "suggest": {
+                "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": ""
             },
             "type": "library",
@@ -48727,7 +48685,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -48736,7 +48696,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-24 14:36:35"
+            "time": "2014-05-15 08:56:35"
         },
         {
             "name": "symfony/finder",
@@ -48745,12 +48705,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "9a267caac6298b91efc7f0bc8522fd80f48fee98"
+                "reference": "1343b576d1401f4a5117cab4e250201ae348143a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/9a267caac6298b91efc7f0bc8522fd80f48fee98",
-                "reference": "9a267caac6298b91efc7f0bc8522fd80f48fee98",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/1343b576d1401f4a5117cab4e250201ae348143a",
+                "reference": "1343b576d1401f4a5117cab4e250201ae348143a",
                 "shasum": ""
             },
             "require": {
@@ -48774,7 +48734,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -48783,7 +48745,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:29:57"
+            "time": "2014-05-12 09:28:39"
         },
         {
             "name": "symfony/process",
@@ -48792,12 +48754,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "d4b086ca4d6e192d8c2c64fe011159c8bc4c9daa"
+                "reference": "8a3edace8e8aabed8992b993bfc13df3b1e836f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/d4b086ca4d6e192d8c2c64fe011159c8bc4c9daa",
-                "reference": "d4b086ca4d6e192d8c2c64fe011159c8bc4c9daa",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/8a3edace8e8aabed8992b993bfc13df3b1e836f2",
+                "reference": "8a3edace8e8aabed8992b993bfc13df3b1e836f2",
                 "shasum": ""
             },
             "require": {
@@ -48821,7 +48783,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -48830,7 +48794,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:29:57"
+            "time": "2014-04-28 05:15:04"
         }
     ],
     "packages-dev": [
@@ -48840,12 +48804,12 @@
             "source": {
                 "type": "git",
                 "url": "git://github.com/EcomDev/EcomDev_PHPUnit.git",
-                "reference": "c607498d2299a8ee70fe86cebd6e4298dd68ba6e"
+                "reference": "bfa5970e2dd63704d05c4209ee5aa7f6322e2f91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/EcomDev/EcomDev_PHPUnit/zipball/c607498d2299a8ee70fe86cebd6e4298dd68ba6e",
-                "reference": "c607498d2299a8ee70fe86cebd6e4298dd68ba6e",
+                "url": "https://github.com/EcomDev/EcomDev_PHPUnit/zipball/bfa5970e2dd63704d05c4209ee5aa7f6322e2f91",
+                "reference": "bfa5970e2dd63704d05c4209ee5aa7f6322e2f91",
                 "shasum": ""
             },
             "require": {
@@ -48867,7 +48831,7 @@
                 "source": "https://github.com/EcomDev/EcomDev_PHPUnit/tree/dev",
                 "issues": "https://github.com/EcomDev/EcomDev_PHPUnit/issues"
             },
-            "time": "2013-11-07 16:47:59"
+            "time": "2014-01-24 10:50:33"
         },
         {
             "name": "mikey179/vfsStream",
@@ -48875,19 +48839,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikey179/vfsStream.git",
-                "reference": "2a5c0827aefd5e553097fa114bd8c141f308f769"
+                "reference": "6a1c82e9bd1ca3a53e8864937c86136f4e2c9dd3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/2a5c0827aefd5e553097fa114bd8c141f308f769",
-                "reference": "2a5c0827aefd5e553097fa114bd8c141f308f769",
+                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/6a1c82e9bd1ca3a53e8864937c86136f4e2c9dd3",
+                "reference": "6a1c82e9bd1ca3a53e8864937c86136f4e2c9dd3",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~3.7"
+                "phpunit/phpunit": "~4.1"
             },
             "type": "library",
             "extra": {
@@ -48905,7 +48869,7 @@
                 "BSD"
             ],
             "homepage": "http://vfs.bovigo.org/",
-            "time": "2014-01-11 11:50:17"
+            "time": "2014-05-08 16:24:45"
         },
         {
             "name": "phpunit/dbunit",
@@ -48971,18 +48935,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "6f5fe28389462fbfe9420ddbcc734be4691424f5"
+                "reference": "61fed79803b6c75d461b909dfac05bbef5cd4f46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/6f5fe28389462fbfe9420ddbcc734be4691424f5",
-                "reference": "6f5fe28389462fbfe9420ddbcc734be4691424f5",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/61fed79803b6c75d461b909dfac05bbef5cd4f46",
+                "reference": "61fed79803b6c75d461b909dfac05bbef5cd4f46",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3",
                 "phpunit/php-file-iterator": ">=1.3.0@stable",
-                "phpunit/php-text-template": ">=1.1.1@stable",
+                "phpunit/php-text-template": ">=1.2.0@stable",
                 "phpunit/php-token-stream": ">=1.1.3@stable"
             },
             "require-dev": {
@@ -49024,7 +48988,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-01-25 07:52:49"
+            "time": "2014-05-19 01:58:57"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -49077,12 +49041,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-text-template.git",
-                "reference": "1eeef106193d2f8c539728e566bb4793071a9e18"
+                "reference": "206dfefc0ffe9cebf65c413e3d0e809c82fbf00a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/1eeef106193d2f8c539728e566bb4793071a9e18",
-                "reference": "1eeef106193d2f8c539728e566bb4793071a9e18",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/206dfefc0ffe9cebf65c413e3d0e809c82fbf00a",
+                "reference": "206dfefc0ffe9cebf65c413e3d0e809c82fbf00a",
                 "shasum": ""
             },
             "require": {
@@ -49113,7 +49077,7 @@
             "keywords": [
                 "template"
             ],
-            "time": "2013-01-07 10:56:17"
+            "time": "2014-01-30 17:20:04"
         },
         {
             "name": "phpunit/php-timer",
@@ -49165,12 +49129,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "292f4d5772dad5a12775be69f4a8dd663b20f103"
+                "reference": "955c24b708f8bfd6a05f303217a8dac3a443d531"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/292f4d5772dad5a12775be69f4a8dd663b20f103",
-                "reference": "292f4d5772dad5a12775be69f4a8dd663b20f103",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/955c24b708f8bfd6a05f303217a8dac3a443d531",
+                "reference": "955c24b708f8bfd6a05f303217a8dac3a443d531",
                 "shasum": ""
             },
             "require": {
@@ -49207,7 +49171,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2013-10-21 14:03:39"
+            "time": "2014-05-12 05:34:42"
         },
         {
             "name": "phpunit/phpunit",
@@ -49289,12 +49253,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "c9d44561ac41ab2dddf251c471998f8fc370b6c9"
+                "reference": "c39c4511c3b007539eb170c32cbc2af49a07351a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/c9d44561ac41ab2dddf251c471998f8fc370b6c9",
-                "reference": "c9d44561ac41ab2dddf251c471998f8fc370b6c9",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/c39c4511c3b007539eb170c32cbc2af49a07351a",
+                "reference": "c39c4511c3b007539eb170c32cbc2af49a07351a",
                 "shasum": ""
             },
             "require": {
@@ -49338,7 +49302,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2014-01-26 15:45:02"
+            "time": "2014-02-16 12:43:56"
         },
         {
             "name": "phpunit/phpunit-selenium",
@@ -49449,12 +49413,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "9921872611710df49cf035c259e5a461ea2d0f8c"
+                "reference": "2158ca824145bd01877f58c987aff828bccddefa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/9921872611710df49cf035c259e5a461ea2d0f8c",
-                "reference": "9921872611710df49cf035c259e5a461ea2d0f8c",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/2158ca824145bd01877f58c987aff828bccddefa",
+                "reference": "2158ca824145bd01877f58c987aff828bccddefa",
                 "shasum": ""
             },
             "require": {
@@ -49478,7 +49442,9 @@
             "authors": [
                 {
                     "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Symfony Community",
@@ -49487,7 +49453,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2014-01-07 13:29:57"
+            "time": "2014-05-16 14:25:18"
         }
     ],
     "aliases": [
@@ -49495,7 +49461,6 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "jhhello/jh_magento_boilerplate_ce": 20,
         "ivanchepurnyi/ecomdev_phpunit": 20
     },
     "platform": [
