@@ -23,7 +23,7 @@ the file for an example of how to add custom repositories. Read [here](https://g
 
 For deploying, the Magento Version specified in the `composer.json` file will be used. This MUST be a repository with mappings as they are used to copy Magento from the `vendor` directory to the `htdocs` directory during deployment/
 
-
+Remember that Enterprise Versions of Magento must be stored privately. We do this using Bitbucket and it works fine!
 
 ## Goals ##
 
