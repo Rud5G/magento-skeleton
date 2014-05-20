@@ -28,6 +28,10 @@ Remember that Enterprise Versions of Magento must be stored privately. We do thi
 One of the great things to come out of this project is that you can test Magento upgrades so easily. You simply add the new version of Magento to your `.n98-magerun.yaml` config file, uninstall the current Magento version & reinstall.
 It also discourages core hacks, as Magento is always applied last.
 
+### Notes ###
+
+This project is beta software at the minute. We are using it on a few sites in production and so far is proving to work well. There are bound to be bugs which need ironing out. Hopefully this tool can be a help to many others!
+
 ## Goals ##
 
 1. [x] Stop putting Magento Source code in project repositories.
