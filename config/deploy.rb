@@ -3,7 +3,7 @@ set :keep_releases,     3
 
 #git details
 set :scm, :git
-set :repo_url,      'git@bitbucket.org:jhhello/magento-skeleton.git'
+set :repo_url,      'git@github.com:AydinHassan/magento-skeleton.git'
 set :deploy_via,    :remote_cache
 set :branch,        'master'
 
